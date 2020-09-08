@@ -3,7 +3,6 @@ CREATE TABLE `vehicles` (
 	`model` VARCHAR(60) NOT NULL COLLATE 'utf8_general_ci',
 	`price` INT(11) NOT NULL,
 	`category` VARCHAR(60) NULL DEFAULT NULL COLLATE 'utf8_general_ci',
-	`imglink` VARCHAR(50) NULL DEFAULT NULL COLLATE 'utf8_general_ci',
 	PRIMARY KEY (`model`) USING BTREE
 )
 COLLATE='utf8_general_ci'

@@ -1,11 +1,11 @@
 Locales['en'] = {
     ['vehicle_purchased']   = 'Vehicle bought with success!',
     ['not_enough_money'] = 'You don\'t have enough money!',
-    ['shop_menu'] = 'Press ~g~[E]~w~ to watch the catalog',
+    ['shop_menu'] = 'Press ~g~[E]~w~ to view the catalog',
     ['sell_vehicle'] = 'Press ~g~[E]~w~ to sell ~g~%s~s~ $',
     ['vehicle_sold_for'] = 'Your ~b~%s~s~ was ~y~sold~s~ for ~g~%s~s~€',
     ['not_yours'] = 'This vehicle is not yours',
-    ['watch_catalog'] = '~g~[E]~w~ Watch catalog',
+    ['watch_catalog'] = '~g~[E]~w~ View catalog',
     ['wait_vehicle'] = 'Wait until we load your vehicle!',
 
       -- Test Drive

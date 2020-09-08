@@ -12,7 +12,7 @@ $(document).keyup(function(e) {
 });
 
 $(document).ready(function(){
-
+    
     var page = 1;
     var mpage = 0;
     var cars = []
@@ -20,6 +20,7 @@ $(document).ready(function(){
 
     function LoadCarsPage()
     {
+        console.log("New")
         let index = 0
         let count = 1
         var html = ``
@@ -42,15 +43,15 @@ $(document).ready(function(){
                     
                     html += `<div class="col-4 mb-4">
                                 <div class="card h-100">
-                                    <img src="`+car.imglink+`" class="card-img-top" alt="`+car.name+`">
+                                <img src="imgs/${car.model}.jpg" class="card-img-top" alt="${car.name}">
                                     <div class="card-body">
-                                        <h5 class="card-title">`+car.name+`</h5>
-                                        <p class="card-text">Brand: <b>`+car.categoryLabel+`</b></p>
-                                        <p class="card-text">Price: <b>`+car.price+`€</b></p>
+                                        <h5 class="card-title">${car.name}</h5>
+                                        <p class="card-text">Brand: <b>${car.categoryLabel}</b></p>
+                                        <p class="card-text">Price: <b>${car.price}€</b></p>
                                     </div>
                                     <div class="card-footer bg-white border-0 ">
-                                        <button type="button" id="action1" data-value="buy" data-model="`+ car.model +`" class="btn btn-danger w-auto btn-lg buy">Buy</button>
-                                        <button type="button" id="action2" data-value="test-drive" data-model="`+ car.model +`" class="btn btn-success w-auto float-right btn-lg test-drive">Test Drive</button>
+                                        <button type="button" id="action1" data-value="buy" data-model="${car.model}" class="btn btn-danger w-auto btn-lg buy">Buy</button>
+                                        <button type="button" id="action2" data-value="test-drive" data-model="${car.model}" class="btn btn-success w-auto float-right btn-lg test-drive">Test Drive</button>
                                     </div>
                                 </div>
                             </div>`
